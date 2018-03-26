@@ -13,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,6 +44,17 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        LinearLayout linearLayout = findViewById(R.id.ll_expand);
+        findViewById(R.id.btn_expandable).setOnClickListener(v -> {
+            if (linearLayout.getVisibility() == View.VISIBLE) {
+                linearLayout.setVisibility(View.GONE);
+            } else {
+                linearLayout.setVisibility(View.VISIBLE);
+            }
+            ExpandAnimation animation = new ExpandAnimation(linearLayout, 300);
+//            animation.setAnimationListener(new MyAnimationListener());
+            linearLayout.startAnimation(animation);
+        });
     }
 
     @Override
