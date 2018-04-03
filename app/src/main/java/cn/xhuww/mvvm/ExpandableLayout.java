@@ -1,4 +1,4 @@
-package cn.xhuww.worktool;
+package cn.xhuww.mvvm;
 
 /**
  * 作者：xhu_ww on 2018/3/25.
@@ -19,10 +19,10 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import static cn.xhuww.worktool.ExpandableLayout.State.COLLAPSED;
-import static cn.xhuww.worktool.ExpandableLayout.State.COLLAPSING;
-import static cn.xhuww.worktool.ExpandableLayout.State.EXPANDED;
-import static cn.xhuww.worktool.ExpandableLayout.State.EXPANDING;
+import static cn.xhuww.mvvm.ExpandableLayout.State.COLLAPSED;
+import static cn.xhuww.mvvm.ExpandableLayout.State.COLLAPSING;
+import static cn.xhuww.mvvm.ExpandableLayout.State.EXPANDED;
+import static cn.xhuww.mvvm.ExpandableLayout.State.EXPANDING;
 
 
 public class ExpandableLayout extends FrameLayout {

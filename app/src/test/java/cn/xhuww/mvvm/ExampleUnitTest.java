@@ -1,4 +1,4 @@
-package cn.xhuww.worktool;
+package cn.xhuww.mvvm;
 
 import org.junit.Test;
 

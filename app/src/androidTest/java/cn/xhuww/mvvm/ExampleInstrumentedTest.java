@@ -1,4 +1,4 @@
-package cn.xhuww.worktool;
+package cn.xhuww.mvvm;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

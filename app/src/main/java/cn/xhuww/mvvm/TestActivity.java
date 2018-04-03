@@ -1,21 +1,16 @@
-package cn.xhuww.worktool;
+package cn.xhuww.mvvm;
 
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.annimon.stream.Optional;
-import com.annimon.stream.Stream;
-
-import java.util.Arrays;
 
 /**
  * 作者：xhu_ww on 2018/3/25.

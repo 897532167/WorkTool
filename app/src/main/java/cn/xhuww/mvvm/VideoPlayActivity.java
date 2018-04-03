@@ -1,10 +1,7 @@
-package cn.xhuww.worktool;
+package cn.xhuww.mvvm;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.MediaController;
-import android.widget.VideoView;
 
 /**
  * 作者：xhu_ww on 2018/3/25.

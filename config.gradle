@@ -1,0 +1,36 @@
+def support_version = '27.0.2'
+def dagger_version = '2.14.1'  //https://github.com/google/dagger
+def stream_version = '1.1.9'
+project.ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.2",
+
+            minSdkVersion    : 16,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0.1"
+    ]
+
+    dependencies = [
+            //android-support
+            "support-v4"              : "com.android.support:support-v4:${support_version}",
+            "appcompat-v7"            : "com.android.support:appcompat-v7:${support_version}",
+            "design"                  : "com.android.support:design:${support_version}",
+            "recyclerview-v7"         : "com.android.support:recyclerview-v7:${support_version}",
+            "cardview-v7"             : "com.android.support:cardview-v7:${support_version}",
+            "support-annotations"     : "com.android.support:support-annotations:${support_version}",
+            "constraint-layout"       : "com.android.support.constraint:constraint-layout:1.0.2",
+
+            //dagger
+            "dagger-android"          : "com.google.dagger:dagger-android:${dagger_version}",
+            "dagger-android-support"  : "com.google.dagger:dagger-android-support:${dagger_version}",
+            "dagger-compiler"         : "com.google.dagger:dagger-compiler:${dagger_version}",
+            "dagger-android-processor": "com.google.dagger:dagger-android-processor:${dagger_version}",
+
+            //junit
+            "junit"                   : "junit:junit:4.12",
+            //类似java9 stream
+            "annimon-stream"          : "com.annimon:stream:${stream_version}"
+    ]
+}
