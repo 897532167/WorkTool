@@ -8,17 +8,13 @@
         <attr name="android:orientation" />
     </declare-styleable>
 
-    <declare-styleable name="AdapterView">
+    <declare-styleable name="RecyclerView">
         <!--子Item的布局ID-->
         <attr name="itemLayout" format="reference" />
         <!--子Item的布局ID-->
         <attr name="itemsData" format="reference" />
         <!--子Item的布局ID-->
         <attr name="onBindItem" format="reference" />
-        <attr name="adapter" />
-    </declare-styleable>
-
-    <declare-styleable name="RecyclerView" parent="AdapterView">
         <attr name="layoutManager" format="reference" />
     </declare-styleable>
 
