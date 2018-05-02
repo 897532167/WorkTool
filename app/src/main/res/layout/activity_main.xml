@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:divider="@drawable/linear_divider_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
 
-    <data>
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
 
-        <variable
-            name="activity"
-            type="cn.xhuww.mvvm.MainActivity" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <import type="cn.xhuww.mvvm.widget.LayoutManagers" />
-    </data>
+        <TextView
+            android:id="@+id/tv_right_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="筛选"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="invisible"/>
-        <!--app:layoutManager="@{LayoutManagers.linear()}" -->
-
-</layout>
+        android:gravity="center"
+        android:text="測試" />
+</LinearLayout>

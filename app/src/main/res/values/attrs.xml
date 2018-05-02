@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <declare-styleable name="ExpandableLayout">
         <attr name="el_duration" format="integer" />
         <attr name="el_expanded" format="boolean" />
@@ -16,6 +15,14 @@
         <!--子Item的布局ID-->
         <attr name="onBindItem" format="reference" />
         <attr name="layoutManager" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomListView">
+        <attr name="textNormalColor" format="color" />
+        <attr name="textSelectColor" format="color" />
+        <attr name="textBackNormalColor" format="color" />
+        <attr name="textBackSelectColor" format="color" />
+        <attr name="drawableLeft" format="reference" />
     </declare-styleable>
 
 </resources>

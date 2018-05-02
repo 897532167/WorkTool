@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_squera"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:scrollbars="none">
+
+        <cn.xhuww.mvvm.widget.CustomListView
+            android:id="@+id/menu_left_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/linear_divider_line"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            test:drawableLeft="@drawable/shape_shelf_item"
+            test:textBackNormalColor="#efefef"
+            test:textBackSelectColor="@android:color/white"
+            test:textNormalColor="#272636"
+            test:textSelectColor="@android:color/holo_blue_bright" />
+    </ScrollView>
+    <ListView
+        android:id="@+id/list_view"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp" />
+</LinearLayout>
