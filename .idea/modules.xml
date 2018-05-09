@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WorkTool.iml" filepath="$PROJECT_DIR$/WorkTool.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://H:\FLWorkFile\WorkTool\e_mvvm.iml" filepath="H:\FLWorkFile\WorkTool\e_mvvm.iml" />
     </modules>
   </component>
 </project>

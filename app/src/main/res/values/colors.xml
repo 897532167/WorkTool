@@ -2,5 +2,37 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#f95422</color>
+
+    <color name="white_color">#ffffff</color>
+    <color name="red_color">#ff3000</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_light">#330000ff</color>
+    <color name="blue_dark">#3F51B5</color>
+    <color name="red">#ff0000</color>
+    <color name="red_dark">#a60000</color>
+    <color name="black_color">#000000</color>
+    <color name="black_one_color">#272636</color>
+    <color name="black_six_color">#505050</color>
+    <color name="black_two_color">#4d4d4d</color>
+    <color name="black_three_color">#efefef</color>
+    <color name="black_for_color">#999999</color>
+    <color name="black_five_color">#caccca</color>
+    <color name="black_seven_color">#1a1a1a</color>
+    <color name="black_light">#55000000</color>
+    <color name="gray_light">#F2F2F2</color>
+    <color name="gray_light2">#efefef</color>
+    <color name="green_light">#888AC14A</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#EE4B4C</color>
+    <color name="divider_gray_light">#E6E6E6</color>
+    <color name="yellow">#f39801</color>
+    <color name="yellow_color">#f5efa505</color>
+    <color name="yellow_translucence_color">#80efa505</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="edit_hit_color">#999898</color>
+    <color name="red_one_color">#FAB5B7</color>
+    <color name="white_light">#DBDBDB</color>
+    <color name="main_gray">#383838</color>
+    <color name="shape_dialog_bg">#95ffffff</color>
 </resources>

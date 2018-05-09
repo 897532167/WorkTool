@@ -26,17 +26,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:padding="10dp"
             android:layout_centerInParent="true"
             android:layout_marginRight="10dp"
+            android:padding="10dp"
             android:text="筛选"
             android:textSize="15sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
-    <TextView
+    <FrameLayout
+        android:id="@+id/fl_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="測試" />
+        android:gravity="center" />
 </LinearLayout>

@@ -25,4 +25,8 @@
         <attr name="drawableLeft" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="DivisionLayoutView">
+        <attr name="divisionText" format="string" />
+        <attr name="divisionDrawable" format="integer" />
+    </declare-styleable>
 </resources>

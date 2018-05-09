@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/register_input_auth_name_hint"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="16"
+            android:hint="@string/register_input_psw_hint"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/register_warning"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/register_checkbox_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/check_box_selector_circle"
+        android:checked="true"
+        android:text="  使用手机注册"
+        android:visibility="visible" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_phone_number_hint"
+            android:inputType="phone"
+            android:textSize="16sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/register_checkbox_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/check_box_selector_circle"
+        android:text="  使用邮箱注册"
+        android:visibility="visible" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="邮箱"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_input_auth_code_hint"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <cn.xhuww.mvvm.widget.CountDownView
+            android:id="@+id/register_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/white_orange_selector"
+            android:padding="10dp"
+            android:text="@string/register_get_auth_code"
+            android:textColor="@color/black_for_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <cn.xhuww.mvvm.widget.RippleTextView
+        android:id="@+id/btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/corner_rectangle_bg_red"
+        android:gravity="center"
+        android:text="@string/register_register"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

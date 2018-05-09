@@ -19,4 +19,21 @@
         <item>测试10</item>
         <item>测试11</item>
     </string-array>
+
+    // 注册
+    <string name="binding_account_hint">登录账号</string>
+    <string name="binding_password_hint">登录密码</string>
+    <string name="binding_account">关联账号</string>
+    <string name="register_phone_number_hint">手机号码</string>
+    <string name="register_get_auth_code">获取验证码</string>
+    <string name="register_input_auth_code_hint">请输入验证码</string>
+    <string name="register_input_auth_name_hint">用户名</string>
+    <string name="register_input_legal_name_hint">用户名不能为空或敏感字符</string>
+    <string name="register_input_auth_phone_hint">请输入正确的手机号</string>
+    <string name="register_input_auth_email_hint">请输入正确的邮箱</string>
+    <string name="register_next_step">下一步</string>
+    <string name="register_input_psw_hint">请输入密码</string>
+    <string name="register_register">注册</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_warning">该密码可用于登录与V支付提现操作，请务必牢记！</string>
 </resources>

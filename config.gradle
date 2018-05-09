@@ -6,7 +6,7 @@ def stream_version = '1.1.9'
 project.ext {
     android = [
             compileSdkVersion: 27,
-            buildToolsVersion: "27.0.2",
+            buildToolsVersion: "27.0.3",
 
             minSdkVersion    : 16,
             targetSdkVersion : 27,
