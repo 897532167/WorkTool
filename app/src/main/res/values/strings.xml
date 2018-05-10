@@ -20,6 +20,18 @@
         <item>测试11</item>
     </string-array>
 
+    //登录
+    <string name="login_no_spacing">登录</string>
+    <string name="login_four_spacing">登\t\t录</string>
+    <string name="login_user_name_hint">请输入用户名/邮箱/手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_forget_password">忘记密码？</string>
+    <string name="login_fast_register">快速注册</string>
+    <string name="login_other_ways">其他方式登录</string>
+    <string name="login_sina_microblog">新浪微博</string>
+    <string name="login_qq">QQ</string>
+    <string name="login_wechat">微信</string>
+
     // 注册
     <string name="binding_account_hint">登录账号</string>
     <string name="binding_password_hint">登录密码</string>
@@ -33,6 +45,7 @@
     <string name="register_input_auth_email_hint">请输入正确的邮箱</string>
     <string name="register_next_step">下一步</string>
     <string name="register_input_psw_hint">请输入密码</string>
+    <string name="register_affirm_psw_hint">再次输入密码</string>
     <string name="register_register">注册</string>
     <string name="register_success">注册成功</string>
     <string name="register_warning">该密码可用于登录与V支付提现操作，请务必牢记！</string>

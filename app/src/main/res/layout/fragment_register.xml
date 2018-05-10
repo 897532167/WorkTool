@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:focusable="false"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:focusableInTouchMode="true">
+    android:padding="16dp">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -39,20 +39,27 @@
             android:textSize="16sp" />
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:id="@+id/tv_warning"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="10dp"
-        android:text="@string/register_warning"
-        android:textSize="12sp" />
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/affirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="16"
+            android:hint="@string/register_affirm_psw_hint"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
 
     <CheckBox
         android:id="@+id/register_checkbox_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
         android:button="@drawable/check_box_selector_circle"
         android:checked="true"
         android:text="  使用手机注册"
