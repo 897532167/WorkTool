@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import cn.xhuww.mvvm.view.fragment.ContactFragment;
 import cn.xhuww.mvvm.view.fragment.LoginFragment;
 import cn.xhuww.mvvm.view.fragment.PersonalCenterFragment;
 import cn.xhuww.mvvm.view.fragment.RegisterFragment;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 //                .commit();
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.fl_main, new PersonalCenterFragment(), "PersonalCenterFragment")
+                .add(R.id.fl_main, new ContactFragment(), "ContactFragment")
                 .commit();
 
         CustomBottomNavigationView navigationView = findViewById(R.id.navigation);
