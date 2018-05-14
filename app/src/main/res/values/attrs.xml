@@ -29,4 +29,19 @@
         <attr name="divisionText" format="string" />
         <attr name="divisionDrawable" format="integer" />
     </declare-styleable>
+
+
+    <declare-styleable name="GroupTextView">
+        <attr name="textLeftColor" format="color" />
+        <attr name="textRightColor" format="color" />
+        <attr name="textLeftSize" format="dimension" />
+        <attr name="textRightSize" format="dimension" />
+        <attr name="textLeftString" format="string" />
+        <attr name="textRightString" format="string" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="drawablePaddingLeft" format="dimension" />
+        <attr name="drawablePaddingRight" format="dimension" />
+        <attr name="leftWidth" format="dimension" />
+    </declare-styleable>
 </resources>

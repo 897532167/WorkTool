@@ -66,4 +66,6 @@ dependencies {
     //glide
     implementation rootProject.ext.dependencies["glide"]
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+
+    implementation rootProject.ext.dependencies["avldialog"]
 }
