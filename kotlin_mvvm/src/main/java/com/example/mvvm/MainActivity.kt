@@ -6,6 +6,7 @@ import com.example.mvvm.base.BaseActivity
 import com.example.mvvm.viewmodel.LoginViewModel
 
 class MainActivity : BaseActivity<ActivityMainBinding, LoginViewModel>() {
+
     override fun getLayoutId(): Int {
         return R.layout.activity_main
     }
