@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">kotlin_mvvm</string>
+
+    // Main
+    <string name="home_page">首页</string>
+    <string name="time_line">时间轴</string>
+    <string name="message">消息</string>
+    <string name="personal_info">个人中心</string>
+</resources>

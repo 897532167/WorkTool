@@ -18,9 +18,7 @@ import android.support.v7.widget.AppCompatImageView;
 import android.widget.OverScroller;
 import android.widget.Scroller;
 
-
 /**
- * <p></p>
  * 自定义可缩放旋转等功能的ImageView
  */
 public class PhotoView extends AppCompatImageView {
