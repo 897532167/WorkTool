@@ -1,4 +1,4 @@
-package com.example.mvvm.utils
+package com.example.study.utils
 
 
 /**

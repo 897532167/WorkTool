@@ -1,9 +1,9 @@
-package com.example.mvvm.di.scope
+package com.example.study.di.scope
 
 import javax.inject.Scope
 
 /**
- * Created by xhu_ww on 2018/5/28.
+ * Created by xhu_ww on 2018/5/29.
  * description:
  */
 @Scope

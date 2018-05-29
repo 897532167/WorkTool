@@ -1,4 +1,4 @@
-package com.example.mvvm.widget
+package com.example.study.widget
 
 import android.annotation.SuppressLint
 import android.content.Context

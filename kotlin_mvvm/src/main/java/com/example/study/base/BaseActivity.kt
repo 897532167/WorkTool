@@ -1,22 +1,24 @@
-package com.example.mvvm.base
+package com.example.study.base
 
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import dagger.android.DaggerActivity
+import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
 /**
  * Created by xhu_ww on 2018/5/28.
  * description:
  */
-abstract class BaseActivity<B : ViewDataBinding, V : BaseViewModel> : AppCompatActivity() {
+open abstract class BaseActivity<B : ViewDataBinding, V : BaseViewModel> : DaggerAppCompatActivity() {
     lateinit var binding: B
     val TAG = this.javaClass.name
 
     @Inject
     lateinit var viewModel: V
+
     /**
      * 布局ID
      */

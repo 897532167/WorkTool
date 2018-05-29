@@ -1,6 +1,6 @@
-package com.example.mvvm.viewmodel
+package com.example.study.mvvm.viewmodel
 
-import com.example.mvvm.base.BaseViewModel
+import com.example.study.base.BaseViewModel
 import javax.inject.Inject
 
 /**

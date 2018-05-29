@@ -1,4 +1,4 @@
-package com.example.mvvm.base
+package com.example.study.base
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
@@ -19,7 +19,7 @@ open class BaseViewModel {
 
     protected fun addDisposable(subscription: Disposable) {
         if (mCompositeDisposable == null || mCompositeDisposable!!.isDisposed) {
-            mCompositeDisposable = CompositeDisposable()
+            this.mCompositeDisposable = CompositeDisposable()
         }
         mCompositeDisposable!!.add(subscription)
     }
@@ -31,5 +31,6 @@ open class BaseViewModel {
         if (mCompositeDisposable != null) {
             mCompositeDisposable!!.dispose()
         }
+        this.mCompositeDisposable = null
     }
 }
