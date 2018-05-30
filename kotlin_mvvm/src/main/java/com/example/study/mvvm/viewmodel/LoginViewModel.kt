@@ -7,7 +7,9 @@ import javax.inject.Inject
  * Created by xhu_ww on 2018/5/28.
  * description:
  */
-class LoginViewModel : BaseViewModel() {
+class LoginViewModel : BaseViewModel {
+    @Inject
+    constructor()
 
     fun getName(): String {
         return "TEST_DAGGER2"
