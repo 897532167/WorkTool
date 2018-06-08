@@ -11,16 +11,12 @@ import android.util.AttributeSet
  * Created by xhu_ww on 2018/5/28.
  * description:
  */
-class CustomBottomNavigationView : BottomNavigationView {
+@SuppressLint("RestrictedApi")
+class CustomBottomNavigationView @JvmOverloads constructor(
+        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : BottomNavigationView(context, attrs, defStyleAttr) {
 
-    constructor(context: Context?) : this(context, null)
-    constructor(context: Context?, attrs: AttributeSet?) : this(context, attrs, 0)
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        disableShiftMode()
-    }
-
-    @SuppressLint("RestrictedApi")
-    private fun disableShiftMode() {
+    init {
         try {
             val menuView = getChildAt(0) as BottomNavigationMenuView
             val shiftingMode = menuView.javaClass.getDeclaredField("mShiftingMode")
@@ -33,7 +29,7 @@ class CustomBottomNavigationView : BottomNavigationView {
                 item.setShiftingMode(false)
                 item.setChecked(item.itemData.isChecked)
             }
-        } catch (e : Exception) {
+        } catch (e: Exception) {
             e.printStackTrace()
         }
     }

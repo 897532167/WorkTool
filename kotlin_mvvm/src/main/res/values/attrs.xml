@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerView">
+        <!--子Item的布局ID-->
+        <attr name="itemLayout" format="reference" />
+        <!--子Item的布局ID-->
+        <attr name="itemsData" format="reference" />
+        <!--子Item的布局ID-->
+        <attr name="onBindItem" format="reference" />
+        <attr name="layoutManager" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomListView">
+        <attr name="textNormalColor" format="color" />
+        <attr name="textSelectColor" format="color" />
+        <attr name="textBackNormalColor" format="color" />
+        <attr name="textBackSelectColor" format="color" />
+        <attr name="drawableLeft" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DivisionLayoutView">
+        <attr name="divisionText" format="string" />
+        <attr name="divisionDrawable" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GroupTextView">
+        <attr name="textLeftColor" format="color" />
+        <attr name="textRightColor" format="color" />
+        <attr name="textLeftSize" format="dimension" />
+        <attr name="textRightSize" format="dimension" />
+        <attr name="textLeftString" format="string" />
+        <attr name="textRightString" format="string" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="drawablePaddingLeft" format="dimension" />
+        <attr name="drawablePaddingRight" format="dimension" />
+        <attr name="leftWidth" format="dimension" />
+    </declare-styleable>
+
+    <attr name="cpCancelTextSize" format="dimension|reference" />
+    <attr name="cpCancelTextColor" format="color|reference" />
+
+    <attr name="cpClearTextIcon" format="reference" />
+    <attr name="cpSearchTextSize" format="dimension|reference" />
+    <attr name="cpSearchTextColor" format="color|reference" />
+    <attr name="cpSearchHintText" format="string|reference" />
+    <attr name="cpSearchHintTextColor" format="color|reference" />
+    <attr name="cpSearchCursorDrawable" format="reference" />
+
+    <attr name="cpListItemTextSize" format="dimension|reference" />
+    <attr name="cpListItemTextColor" format="color|reference" />
+    <attr name="cpListItemHeight" format="dimension|reference"/>
+
+    <attr name="cpEmptyIcon" format="reference"/>
+    <attr name="cpEmptyIconWidth" format="dimension|reference"/>
+    <attr name="cpEmptyIconHeight" format="dimension|reference"/>
+    <attr name="cpEmptyText" format="string|reference"/>
+    <attr name="cpEmptyTextSize" format="dimension|reference"/>
+    <attr name="cpEmptyTextColor" format="color|reference"/>
+
+    <attr name="cpGridItemBackground" format="color|reference"/>
+    <attr name="cpGridItemSpace" format="reference"/>
+
+    <attr name="cpSectionHeight" format="reference"/>
+    <attr name="cpSectionTextSize" format="reference" />
+    <attr name="cpSectionTextColor" format="reference" />
+    <attr name="cpSectionBackground" format="reference" />
+
+    <attr name="cpIndexBarTextSize" format="reference" />
+    <attr name="cpIndexBarNormalTextColor" format="reference" />
+    <attr name="cpIndexBarSelectedTextColor" format="reference" />
+
+    <attr name="cpOverlayWidth" format="dimension|reference"/>
+    <attr name="cpOverlayHeight" format="dimension|reference"/>
+    <attr name="cpOverlayTextSize" format="dimension|reference"/>
+    <attr name="cpOverlayTextColor" format="color|reference"/>
+    <attr name="cpOverlayBackground" format="color|reference"/>
+</resources>

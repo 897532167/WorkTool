@@ -1,1 +1,1 @@
-include ':kotlin_mvvm'
+include ':kotlin_mvvm', ':daggerexample'

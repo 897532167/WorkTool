@@ -3,7 +3,7 @@ package com.example.study.app
 import android.app.Activity
 import android.app.Application
 import android.support.v4.app.Fragment
-import com.example.study.di.component.DaggerMyApplicationComponent
+import com.example.study.di.component.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.HasActivityInjector
 import dagger.android.DispatchingAndroidInjector
@@ -29,6 +29,10 @@ class MyApplication : Application(), HasActivityInjector, HasSupportFragmentInje
 
     override fun onCreate() {
         super.onCreate()
-        DaggerMyApplicationComponent.create().inject(this)
+        DaggerAppComponent
+                .builder()
+                .application(this)
+                .build()
+                .inject(this)
     }
 }

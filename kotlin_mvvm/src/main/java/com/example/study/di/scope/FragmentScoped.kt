@@ -6,7 +6,7 @@ import javax.inject.Scope
  * Created by xhu_ww on 2018/6/8.
  * description:
  */
-@MustBeDocumented
 @Scope
 @Retention(AnnotationRetention.RUNTIME)
-annotation class ActivityScope
+@Target(AnnotationTarget.TYPE, AnnotationTarget.FUNCTION)
+annotation class FragmentScoped

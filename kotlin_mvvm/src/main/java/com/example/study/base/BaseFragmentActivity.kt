@@ -20,7 +20,7 @@ abstract class BaseFragmentActivity<B : ViewDataBinding, V : BaseViewModel> : Ba
     /**
      * 加载一个新的Fragment
      */
-    protected fun jumpFragment(fragment: Fragment) {
+    protected fun addFragment(fragment: Fragment) {
         supportFragmentManager.inTransaction {
             add(fragmentContainerId(), fragment).addToBackStack(fragment.javaClass.name)
         }

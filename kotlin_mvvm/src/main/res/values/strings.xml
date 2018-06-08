@@ -1,9 +1,94 @@
 <resources>
     <string name="app_name">kotlin_mvvm</string>
 
-    // Main
+    // MainActivity
     <string name="home_page">首页</string>
     <string name="time_line">时间轴</string>
     <string name="message">消息</string>
     <string name="personal_info">个人中心</string>
+
+    // 共用
+    <string name="confirm">确定</string>
+    <string name="home_page_search_hint">搜索您想要的商品</string>
+    <string name="please_choice_picture">请选择图片</string>
+    <string name="choice_type">预览</string>
+    <string name="choice_picture">选图</string>
+    <string name="take_picture">拍照</string>
+    <string name="net_error">系统繁忙</string>
+    <string name="choice_from_album">相册</string>
+    <string name="cancle">取消</string>
+    <string name="guesss_you_need">您可能还需要</string>
+    <string name="empty_prompt1">抱歉，当前地址尚未开通服务，敬请期待哦~</string>
+    <string name="empty_prompt2">抱歉，GPS定位不可用，请手动填写您的地址</string>
+    <string name="empty_prompt3">抱歉，加载失败</string>
+    <string name="empty_operate1">切换地址</string>
+    <string name="empty_operate2">填写地址</string>
+    <string name="empty_operate3">点击刷新</string>
+    <string name="login_prompt">点击登录</string>
+    <string name="input_psw">输入密码</string>
+    <string name="chat_list_title">聊天信息</string>
+    <string name="app_downing">正在为您下载新版App…</string>
+    <string name="loading">加载中…</string>
+    <string name="head_refresh_text1">下拉刷新</string>
+    <string name="head_refresh_text2">松开刷新</string>
+    <string name="head_refresh_text3">更新中...</string>
+    <string name="head_refresh_prompt">微薄利超市祝您购物愉快</string>
+
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+    <string name="str_recorder_want_press">手指上滑取消发送</string>
+    //登录
+    <string name="login_no_spacing">登录</string>
+    <string name="login_four_spacing">登\t\t录</string>
+    <string name="login_user_name_hint">请输入用户名/邮箱/手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_forget_password">忘记密码？</string>
+    <string name="login_fast_register">快速注册</string>
+    <string name="login_other_ways">其他方式登录</string>
+    <string name="login_sina_microblog">新浪微博</string>
+    <string name="login_qq">QQ</string>
+    <string name="login_wechat">微信</string>
+
+    // 注册
+    <string name="binding_account_hint">登录账号</string>
+    <string name="binding_password_hint">登录密码</string>
+    <string name="binding_account">关联账号</string>
+    <string name="register_phone_number_hint">手机号码</string>
+    <string name="register_get_auth_code">获取验证码</string>
+    <string name="register_input_auth_code_hint">请输入验证码</string>
+    <string name="register_input_auth_name_hint">用户名</string>
+    <string name="register_input_legal_name_hint">用户名不能为空或敏感字符</string>
+    <string name="register_input_auth_phone_hint">请输入正确的手机号</string>
+    <string name="register_input_auth_email_hint">请输入正确的邮箱</string>
+    <string name="register_next_step">下一步</string>
+    <string name="register_input_psw_hint">请输入密码</string>
+    <string name="register_affirm_psw_hint">再次输入密码</string>
+    <string name="register_register">注册</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_warning">该密码可用于登录与V支付提现操作，请务必牢记！</string>
+    //个人中心
+    <string name="my_order">我的订单</string>
+    <string name="my_focus">我的关注</string>
+    <string name="my_history">我的足迹</string>
+    <string name="check_all_order">查看所有订单</string>
+    <string name="send_address">收货地址</string>
+    <string name="my_track">我的足迹</string>
+    <string name="share_to_friend">分享给好友</string>
+    <string name="back_feed">我要反馈</string>
+    <string name="take_cash">我要提现</string>
+    <string name="waitting_pay">待付款</string>
+    <string name="waitting_get">待收货</string>
+    <string name="waitting_cashback">待返款</string>
+    <string name="waitting_evaluate">待评价</string>
+    <string name="return_change_goods">售后</string>
+
+
+    <string name="cp_search_hint_text">城市中文名或拼音</string>
+    <string name="cp_cancel">取消</string>
+    <string name="cp_no_result">没有找到，换个词试试~</string>
+    <string name="cp_locate_failed">定位失败</string>
+    <string name="cp_locating">正在定位…</string>
+
+
 </resources>
