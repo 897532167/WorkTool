@@ -17,8 +17,6 @@ import javax.inject.Inject
  * description:
  */
 open class BaseViewModel {
-    @Inject
-    constructor()
 
     /**
      * 将所有正在处理的Subscription都添加到CompositeSubscription中。统一退出的时候注销观察

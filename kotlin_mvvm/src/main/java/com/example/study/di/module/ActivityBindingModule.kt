@@ -10,11 +10,10 @@ import dagger.android.ContributesAndroidInjector
  * Created by xhu_ww on 2018/6/8.
  * description:
  */
-//@Module(subcomponents = arrayOf(MainActivitySubcomponent::class))
 @Module
-abstract class ActivityBuilderComponent {
+abstract class ActivityBindingModule {
 
-//    @ContributesAndroidInjector(modules = [MainActivitySubComponent::class])
-//    @ActivityScope
-//    abstract fun bindMyActivity(): MainActivity
+    @ContributesAndroidInjector(modules = [MainActivityModule::class])
+    @ActivityScope
+    abstract fun mainActivity(): MainActivity
 }

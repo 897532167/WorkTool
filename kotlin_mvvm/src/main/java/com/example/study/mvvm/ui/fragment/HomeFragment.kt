@@ -39,6 +39,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>() 
     }
 
     override fun showData() {
+
     }
 
 }

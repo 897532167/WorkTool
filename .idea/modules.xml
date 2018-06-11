@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WorkTool.iml" filepath="$PROJECT_DIR$/WorkTool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/daggerexample/daggerexample.iml" filepath="$PROJECT_DIR$/daggerexample/daggerexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin_mvvm/kotlin_mvvm.iml" filepath="$PROJECT_DIR$/kotlin_mvvm/kotlin_mvvm.iml" />
     </modules>
   </component>

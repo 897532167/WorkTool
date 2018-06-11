@@ -1,38 +1,18 @@
 package com.example.study.app
 
-import android.app.Activity
-import android.app.Application
-import android.support.v4.app.Fragment
 import com.example.study.di.component.DaggerAppComponent
 import dagger.android.AndroidInjector
-import dagger.android.HasActivityInjector
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.support.HasSupportFragmentInjector
-import javax.inject.Inject
-
+import dagger.android.DaggerApplication
 
 /**
  * Created by xhu_ww on 2018/5/28.
  * description:
  */
-class MyApplication : Application(), HasActivityInjector, HasSupportFragmentInjector {
-
-    @Inject
-    lateinit var dispatchingActivityInjector: DispatchingAndroidInjector<Activity>
-
-    @Inject
-    lateinit var dispatchingFragmentInjector: DispatchingAndroidInjector<Fragment>
-
-    override fun activityInjector(): AndroidInjector<Activity> = dispatchingActivityInjector
-
-    override fun supportFragmentInjector(): AndroidInjector<Fragment> = dispatchingFragmentInjector
-
-    override fun onCreate() {
-        super.onCreate()
-        DaggerAppComponent
+class MyApplication : DaggerApplication() {
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+        return DaggerAppComponent
                 .builder()
                 .application(this)
                 .build()
-                .inject(this)
     }
 }
