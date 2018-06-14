@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kotlin_mvvm">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name="com.example.study.app.MyApplication"
         android:allowBackup="true"

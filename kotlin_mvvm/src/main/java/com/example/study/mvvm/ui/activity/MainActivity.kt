@@ -9,14 +9,14 @@ import com.example.study.mvvm.ui.fragment.RegisterFragment
 import com.example.study.mvvm.viewmodel.LoginViewModel
 
 class MainActivity : BaseFragmentActivity<ActivityMainBinding, LoginViewModel>() {
-    lateinit var fragment: RegisterFragment
+    lateinit var fragment: HomeFragment
 
     override fun getLayoutId(): Int = R.layout.activity_main
 
     override fun fragmentContainerId(): Int = R.id.fl_container
 
     override fun init() {
-        fragment = RegisterFragment()
+        fragment = HomeFragment()
     }
 
     override fun initView() {
