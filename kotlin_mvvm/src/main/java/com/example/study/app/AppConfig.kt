@@ -5,7 +5,8 @@ package com.example.study.app
  * description:
  */
 object AppConfig {
-    val BASE_URL = ""
+    val BASE_URL = "https://54.248.66.37/api"
 
     val IS_FIRST_IN = "IS_FIRST_IN"
+
 }

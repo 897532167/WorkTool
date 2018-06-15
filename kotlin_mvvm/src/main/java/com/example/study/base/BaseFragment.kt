@@ -3,6 +3,7 @@ package com.example.study.base
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -54,6 +55,7 @@ abstract class BaseFragment<B : ViewDataBinding, V : BaseViewModel> : DaggerFrag
         init()
         initView(view)
         showData()
+        Log.i(TAG, "---------onViewCreated")
     }
 
     fun toast(message: String) {
@@ -61,7 +63,14 @@ abstract class BaseFragment<B : ViewDataBinding, V : BaseViewModel> : DaggerFrag
     }
 
     override fun onDestroy() {
-        super.onDestroy()
         viewModel.dispose()
+        Log.i(TAG, "---------onDestroy")
+        super.onDestroy()
     }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i(TAG, "---------onResume")
+    }
+
 }

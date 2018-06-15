@@ -1,5 +1,6 @@
 package com.example.study.mvvm.ui.fragment
 
+import android.content.Context
 import android.support.v4.view.ViewPager
 import android.view.View
 import com.example.kotlin_mvvm.R
@@ -10,6 +11,7 @@ import com.example.study.mvvm.model.data.ClientAccumulativeRate
 import com.example.study.mvvm.viewmodel.HomeFragmentViewModel
 import com.example.study.utils.HttpThread
 import com.example.study.utils.LocalJsonReadUtil
+import com.example.study.widget.ImageDialog
 import com.example.study.widget.ImagePagerAdapter
 
 /**
@@ -38,9 +40,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>() 
                 "http://img0.imgtn.bdimg.com/it/u=3729188735,351366433&fm=27&gp=0.jpg"
         )
 
-
-
-
     }
 
     override fun initView(rootView: View) {
@@ -59,15 +58,20 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>() 
 //
 //        })
 //        binding.indicatorLayout.indicatorSize = urlList.size
+        binding.fragment = this
         binding.bannerView.imageUrls = urlList
         binding.bannerView.startAutoPlay()
-        HttpThread("https://54.248.66.37/api/account?uuid=02FE29AB-F342-4BF5-923A-DCDEDE0ADFA7&auth_token=9b08596b778f54770936b8387fd8a091"
-        ).start()
 
     }
 
     override fun showData() {
 
+    }
+
+    fun showDialog(view: View) {
+        val dialog = ImageDialog(activity as Context)
+        dialog.show(urlList[1])
+        toast("点击")
     }
 
 }

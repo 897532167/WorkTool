@@ -3,6 +3,7 @@ package com.example.study.base
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import dagger.android.DaggerActivity
 import dagger.android.support.DaggerAppCompatActivity
@@ -45,6 +46,7 @@ open abstract class BaseActivity<B : ViewDataBinding, V : BaseViewModel> : Dagge
         init()
         initView()
         showData()
+        Log.i(TAG,"---------onCreate")
     }
 
     fun toast(message: String) {
@@ -52,7 +54,19 @@ open abstract class BaseActivity<B : ViewDataBinding, V : BaseViewModel> : Dagge
     }
 
     override fun onDestroy() {
-        super.onDestroy()
         viewModel.dispose()
+        Log.i(TAG,"---------onDestroy")
+        super.onDestroy()
     }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i(TAG,"---------onResume")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.i(TAG,"---------onRestart")
+    }
+
 }

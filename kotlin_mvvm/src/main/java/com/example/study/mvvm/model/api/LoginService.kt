@@ -16,5 +16,10 @@ interface LoginService {
     fun login(@Field("username") name: String,
               @Field("password") password: String): Observable<Test>
 
+    @POST("/account")
+    fun requestApiToken(@Field("uuid") name: String,
+                        @Field("auth_token") password: String): Observable<Test>
+
+
 
 }
